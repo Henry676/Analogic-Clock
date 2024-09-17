@@ -97,7 +97,7 @@
                 double angulo = Math.toRadians(i * 30); //Every 30 degrees
                 int x1 = _xCenter + (int) ((radious - 20) * Math.cos(angulo)); //Beginning point
                 int y1 = _yCenter + (int) ((radious - 20) * Math.sin(angulo));
-                int x2 = _xCenter + (int) (radious * Math.cos(angulo)); //Final point
+                int x2 = _xCenter + (int) (radious * Math.cos(angulo)); //End point
                 int y2 = _yCenter + (int) (radious * Math.sin(angulo));
                 g.setFont(font);
                 g.setColor(Color.CYAN);
@@ -119,10 +119,10 @@
 
             //Draw minutes marks (60 marks)
             for (byte i = 0; i < 60; i++) {
-                double angulo = Math.toRadians(i * 6); //Cada 6 grados
-                int x1 = _xCenter + (int) ((radious - 10) * Math.cos(angulo)); //Punto de inicio
+                double angulo = Math.toRadians(i * 6); //Every 6 degrees
+                int x1 = _xCenter + (int) ((radious - 10) * Math.cos(angulo)); //Beginning point
                 int y1 = _xCenter + (int) ((radious - 10) * Math.sin(angulo));
-                int x2 = _xCenter + (int) (radious * Math.cos(angulo)); //Punto final
+                int x2 = _xCenter + (int) (radious * Math.cos(angulo)); //End point
                 int y2 = _xCenter + (int) (radious * Math.sin(angulo));
                 g.drawLine(x1, y1, x2, y2); 
             }
